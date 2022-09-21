@@ -31,9 +31,23 @@ header{
 }
 
 .img-menu{
-    width: 180px;
-    position: center;
+    width: 220px;
+    position: relative;
     margin-top: -46px;
+    text-shadow: rgb(90, 100, 238);
+    animation: animate 5s linear infinite;
+}
+
+@keyframes animate 
+{
+    0%
+    {
+        filter:hue-rotate(0deg)
+    }
+100%
+{
+    filter:hue-rotate(40deg)
+ }
 }
 
 .header-title{
@@ -80,11 +94,3 @@ footer{
         box-shadow: none;
     }
 }
-
- .img-menu {
-    transition: transform .1s;
-  }
-  
-  .img-menu:hover {
-    transform: scale(1.2); /* =>> Animação ao dirigir o mouse para o logo do GrowNotes*/
-  }

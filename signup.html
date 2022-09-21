@@ -5,16 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+		<link rel="stylesheet" href="css/style.css">	
 	<title>GrowNotes - Cadastro</title>
-    <link rel="stylesheet" href="css/style.css">	
 </head>
 <body>
 
 <!-- Banner -->
-<div id="col-banner"></div>
+<div id="col-banner" class="container-fluid"></div>
 
 <!-- Login -->
-<div id="col-form">
+<div id="col-form" class="container-fluid">
 	<div class="form-content">
 		
 		<!-- Título do Formulário -->
@@ -29,31 +31,32 @@
 		<!-- Formulário de Cadastro -->		
 		
 		<!--<form>-->
-		
 			<div class="item">
 			
 		<!-- Endereço de Email -->
 		<div>
-			<input id="email" type="text" name="e-mail" placeholder="Digite seu e-mail" />
+			<input id="email" class="form-control" type="text" name="e-mail" placeholder="Digite seu e-mail" />
         </div>
 		
 		<div class="item" style="margin-top:-1px;">
 		
 		<!-- Password -->
 		<div> 
-			<input id="senha1" type="password" name="senha1" placeholder="Digite sua senha" />
+			<input id="senha1" type="password" class="form-control" name="senha1" placeholder="Digite sua senha" />
 		</div>
 
 		<div class="item" style="margin-top:-1px;"></div>
 
 		<!-- Repeat Password -->
 		<div>
-			<input id="senha2" type="password" name="senha2" placeholder="Confirme sua senha" />
+			<input id="senha2" type="password" class="form-control" name="senha2" placeholder="Confirme sua senha" />
 		</div>
 		
 		<!-- Retorna ao login -->	
-		<div class="item" style="margin-top:-1px;">
-			<h3><a href="/login.html" style="margin-left: 10px;">Já tem uma conta? Clique aqui.</a></h3>
+		<div class="item" style="margin-top:15px;">
+			<p class="text-start text-light">Já possui uma conta? <a href="login.html"
+				class="text-info text-decoration-none">Faça seu
+				login!</a></p>
 		</div>
 		
 		<!--</form>-->
@@ -61,12 +64,12 @@
 		<div class="item" style="margin-top:20px;">
 			
 			<!-- Botão de Submeter -->
-			<button id="btn-criar" class="processando" style="margin-right:3px;background-color:#9526f5;">Cadastrar</button>
-		
+			<button id="btn-criar" type="button" class="btn btn-lg btn-outline-info text-light w-50 p-2 mb-2" style="margin-right:3px;background-color:#9526f5;">Cadastrar</button>
 		</div>
 	</div>
 </div>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 <script src="/javascript/data.js"></script>
 <script src="/javascript/signup.js"></script>
 </body>
