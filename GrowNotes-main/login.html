@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon">
+	<title>GrowNotes - Login</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+<!-- Banner -->
+<div id="col-banner"></div>
+
+<!-- Login -->
+<div id="col-form">
+	<div class="form-content">
+		
+		<!-- Título do Formulário -->
+		<div class="title">
+			<h1>Seja bem-vindo ao <font style="color:#0091ff;"> GrowNotes. </font></h1>
+			<p>Faça seu login ou crie sua conta para acessar sua lista de recados pessoal. </p>
+		</div><br>
+		
+		<!-- Formulário de Login -->
+		<!--<form method="post">-->
+		
+		<div class="item">
+		
+		<!-- Endereço de Email -->
+		<div> 
+			<input id="email" type="text" name="e-mail" placeholder="Digite seu e-mail" required />
+		</div>
+
+		<div class="item" style="margin-top:-1px;"></div>
+			
+			<!-- Password -->
+			<div class="item"> 
+				 <input id="senha1" type="password" name="senha1" placeholder="Digite sua senha" required />
+            </div>
+		
+			<!-- Alerta Redirecionamento  -->
+			<div class="item">
+				<p style="margin-top: 20px; font-size: 14px;"> Não tem uma conta? Clique abaixo para cadastrar.</p>
+			</div>
+	    
+		<!--</form>-->
+		
+		<div class="item" style="margin-top:20px;">
+			
+			<!-- Botão de Submeter -->
+			<button id="btn-entrar" class="processando" style="margin-right:3px;background-color:#9526f5;">Entrar</button>
+			<button id="btn-cadastrar" class="processando" style="margin-right:3px;background-color:#9526f5;">Cadastre-se</button>
+		
+		</div>
+	</div>
+</div>
+
+<script src="/javascript/login.js"></script>
+</body>
+</html>
