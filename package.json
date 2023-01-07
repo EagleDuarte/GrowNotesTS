@@ -2,7 +2,7 @@
   "name": "grownotes-main",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "login.js",
   "scripts": {
     "start": "npx tsc"
   },
