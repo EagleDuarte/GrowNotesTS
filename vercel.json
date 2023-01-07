@@ -1,0 +1,8 @@
+{
+    "builds": [
+      {
+        "src": "*.ts",
+        "use": "@vercel/node-ts"
+      }
+    ]
+  }

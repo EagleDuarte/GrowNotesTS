@@ -1,7 +1,6 @@
 "use strict";
 btnLogin.addEventListener("click", entrar);
-document.getElementById("btn-cadastrar").addEventListener("click", realizarCadastro);
-// btnAdd.addEventListener("click", realizarCadastro);
+btnAdd.addEventListener("click", realizarCadastro);
 function entrar() {
     if (!email.value || !senha1.value) {
         return alert("Os campos não foram preenchidos corretamente!");
@@ -20,7 +19,6 @@ function abrirListaDeRecados() {
     window.location.href = "notes.html";
 }
 function realizarCadastro() {
-    console.log(`Realizar cadastro`);
     window.location.href = "signup.html";
     document.getElementById("btn-entrar").addEventListener("click", entrar);
     document.getElementById("btn-cadastrar").addEventListener("click", realizarCadastro);
